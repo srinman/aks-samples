@@ -5,7 +5,9 @@ Custom storageclass is recommended to create storage objects based on unique req
 https://learn.microsoft.com/en-us/azure/aks/azure-files-csi?source=recommendations#create-a-custom-storage-class  
 
 
-Following sample creates Standard_LRS type storage in myappstoragerg resource group and it creates private endpoint in pesubt which is in aks-vnet aksresourcerg.   You can create more custom storage classes with different parameters based on requirements.  
+Following sample creates Standard_LRS type storage in myappstoragerg resource group and it creates private endpoint in pesubt which is in aks-vnet aksresourcerg.   You can create more custom storage classes with different parameters based on requirements.    
+
+Cluster managed identity needs to be provided appropriate access (if placed in different resource group)
 
 ```
 kind: StorageClass
